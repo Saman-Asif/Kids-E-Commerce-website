@@ -42,7 +42,7 @@ const Home2 = () => {
     price: "Rs.80,800.00 PKR"
   },
   {
-    id: 1,
+    id: 5,
     title: "Savannah Friends Kit",
     image: "https://images.unsplash.com/photo-1531796311868-83672cd144f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lkcyUyMGRvaW5nJTIwZmFicmljJTIwcGFpbnRpbmdzJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww", 
     rating: 5,
@@ -50,7 +50,7 @@ const Home2 = () => {
     price: "Rs.60,800.00 PKR"
   },
   {
-    id: 2,
+    id: 6,
     title: "Botanical Tote Kit",
     image: "https://media.istockphoto.com/id/2277075343/photo/group-of-diverse-children-learning-acrylic-pouring-art-in-classroom.jpg?s=612x612&w=0&k=20&c=-TeDijdUKdGdFH9SuoiGO-Qs73U0QRi_S2ZFpJTXQU8=",
     rating: 4,
@@ -58,7 +58,7 @@ const Home2 = () => {
     price: "Rs.80,800.00 PKR"
   },
   {
-    id: 3,
+    id: 7,
     title: "Denim Dreamer Set",
     image: "https://media.istockphoto.com/id/1903748694/photo/group-of-diversity-school-children-learning-acrylic-art-together-in-art-class.jpg?s=612x612&w=0&k=20&c=tbj0HUCK6fvSrACw4JAl8S2XTDz75Wv3ltJOmvSizUw=",
     rating: 5,
@@ -66,7 +66,7 @@ const Home2 = () => {
     price: "Rs.77,800.00 PKR"
   },
   {
-    id: 4,
+    id: 8,
     title: "Fabric Painting Kit",
     image: "https://media.istockphoto.com/id/2277074388/photo/group-of-diverse-children-learning-acrylic-pouring-art-in-classroom.jpg?s=612x612&w=0&k=20&c=a45fCV_dROPpHnD766aZ-T-oQsUzZ1buoS4yfY1IfVM=",
     rating: 3,

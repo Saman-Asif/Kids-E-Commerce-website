@@ -7,7 +7,7 @@ const Home3 = () => {
        <div className='md:p-8 p-4 w-full h-full bg-[#f3eae8] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
        <div className='flex flex-col items-center justify-center'>
         <h1 className='text-[#643e26] text-center fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Our Nurturingly Energetic Craft</h1>
-        <p className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>We bridge tha gap between "Playfull mess" and "Professional Art" providing kids with the tools to create something they are truly proud of.</p>
+        <p className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>We bridge the gap between "Playfull mess" and "Professional Art" providing kids with the tools to create something they are truly proud of.</p>
         <div className='flex w-full flex-col gap-6 lg:flex-row justify-between mt-12'>
             <div className='w-full h-full lg:w-[70%] bg-[#e6d4cf] rounded-4xl px-8 py-20 '>
            <h1 className='text-[#643e26] fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>The Professional Touch</h1>

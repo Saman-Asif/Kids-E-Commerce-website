@@ -21,7 +21,7 @@ const About2 = () => {
     ]
   return (
     <>
-        <div className='md:p-8 p-4 w-full h-full bg-[#f8f4f3] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
+        <div id='services' className='md:p-8 p-4 w-full h-full bg-[#f8f4f3] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
        <div className='flex flex-col items-center justify-center'>
         <h1 className='text-[#643e26] text-center fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Guided By Heart</h1>
         <p className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>The Principles behind every Kindred Spirits creation</p>

@@ -4,6 +4,8 @@ import Home2 from '../components/Home2'
 import Home3 from '../components/Home3'
 import About from '../components/About'
 import Home4 from '../components/Home4'
+import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 
 const Home = () => {
     return (
@@ -20,7 +22,7 @@ const Home = () => {
                         </div>
                         <div className='lg:w-1/2 w-full mt-10 lg:mt-0 relative'>
                             <img className='object-cover rounded-4xl relative w-full lg:h-99 h-auto' src="https://images.unsplash.com/photo-1561898431-a2988eb64ecb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGtpZHMlMjBkb2luZyUyMGZhYnJpYyUyMHBhaW50aW5ncyUyMHByb2Zlc3Npb25hbHxlbnwwfHwwfHx8MA%3D%3D" alt="" />
-                            <div className='absolute text-black text-sm -bottom-4 flex flex-col -left-4 bg-white rounded-2xl py-3 px-4'>
+                            <div className='absolute text-black lg:transform lg:-rotate-8 text-sm -bottom-4 flex flex-col -left-4 bg-white rounded-2xl py-3 px-4'>
                                 <span className='text-[#ee6f55] font-semibold'>Eco Friendly</span>
                                 Non toxic Kid safe<br/> pigments.
                             </div>
@@ -31,6 +33,7 @@ const Home = () => {
                 <Home3/>
                 <About/>
                 <Home4/>
+                <Contact/>
         </>
     )
 }
