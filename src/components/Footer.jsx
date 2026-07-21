@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -13,13 +14,13 @@ const Footer = () => {
         <p className='text-[#643e26] text-xs tracking-widest uppercase font-semibold'>Product</p>
         <ul className='space-y-3 mt-3'>
             <li>
-                   <a href='#' className="nav-link text-sm" >Home</a>
+                   <Link to='/' className="nav-link text-sm" >Home</Link>
             </li>
             <li>
-                 <a href='#products' className="nav-link text-sm" >Products</a>
+                 <Link to='/shop' className="nav-link text-sm" >Products</Link>
             </li>
              <li>
-                  <a href='#services' className="nav-link text-sm" >Services</a>
+                  <Link to='/services' className="nav-link text-sm" >Services</Link>
             </li>
             </ul>
     </div2>
@@ -27,13 +28,13 @@ const Footer = () => {
         <p className='text-[#643e26] font-semibold text-xs tracking-widest uppercase'>GET STARTED</p>
         <ul className='space-y-3 mt-3'>
             <li>
-                  <a href='#aboutus' className="nav-link text-sm" >About</a>
+                  <Link to='/aboutus' className="nav-link text-sm" >About</Link>
             </li>
             <li>
-                   <a href='#contactus' className="nav-link text-sm" >Contact</a>
+                   <Link to='/contactus' className="nav-link text-sm" >Contact</Link>
             </li>
              <li>
-                  <a href='#' className="nav-link text-sm" >Kindred Spirits</a>
+                  <Link href='/' className="nav-link text-sm" >Kindred Spirits</Link>
             </li>
             </ul>
     </div3>
@@ -41,10 +42,10 @@ const Footer = () => {
         <p className='text-[#643e26] text-xs tracking-widest uppercase font-semibold'>LEGAL</p>
        <ul className='space-y-3 mt-3'>
             <li>
-                  <a href='' className="nav-link text-sm" >Cart</a>
+                  <Link to='/cart' className="nav-link text-sm" >Cart</Link>
             </li>
             <li>
-                  <a href='' className="nav-link text-sm" >Payment</a>
+                  <Link to='/signin' className="nav-link text-sm" >Sign In</Link>
             </li>
             </ul>
     </div4>

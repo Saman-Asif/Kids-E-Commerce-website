@@ -14,14 +14,14 @@ const Contact = () => {
                            <div className='text-[#643e26] shrink-0 bg-[#eed6d0] w-12 h-12 rounded-xl flex items-center justify-center'><Mail /></div> 
                             <div>
                                 <span className='text-[#27201e]'>Email Us</span>
-                                <p className=' text-xl lg:text-2xl text-[#643e26]'>hello@kindredspirits.com</p>
+                                <p className=' text-xl lg:text-xl text-[#643e26]'>hello@kindredspirits.com</p>
                             </div>
                             </div>
                               <div className='flex gap-4'>
                            <div className='text-[#643e26] shrink-0 bg-[#eed6d0] w-12 h-12 rounded-xl flex items-center justify-center'><MapPin/></div> 
                             <div>
                                 <span className='text-[#27201e]'>Visit Our Studio</span>
-                                <p className='text-xl lg:text-2xl text-[#643e26]'>Artist Lane, Melbourne</p>
+                                <p className='text-xl lg:text-xl text-[#643e26]'>Artist Lane, Melbourne</p>
                             </div>
                             </div>
                         </div>

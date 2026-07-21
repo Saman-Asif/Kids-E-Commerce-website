@@ -1,5 +1,6 @@
 import { Leaf } from 'lucide-react'
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Home3 = () => {
   return (
@@ -35,9 +36,9 @@ const Home3 = () => {
             <h1 className='text-2xl md:text-3xl font-semibold text-center'>Join our Creative Community</h1>
             <p className='text-center mt-2'>Weekly painting tutorials and inspiration sent to your inbox.</p>
           </div>
-          <button className='bg-[#643e26] text-[#f6edde] rounded-full py-4 text-sm px-8 mt-4 lg:mt-0'>
+         <Link to='/signin'> <button className='bg-[#643e26] text-[#f6edde] rounded-full py-4 text-sm px-8 mt-4 lg:mt-0'>
             Sign Up Now
-          </button>
+          </button></Link>
         </div>
         </div>
         </div>
