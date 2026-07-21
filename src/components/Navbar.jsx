@@ -15,7 +15,6 @@ const Navbar = () => {
         <Link onClick={()=>setIsOpen(false)} to='/' className='sm:hover:border-b hover:text-[#643e26]'>Home</Link>
         <Link onClick={()=>setIsOpen(false)} to='/shop' className='sm:hover:border-b hover:text-[#643e26]'>Shop</Link>
         <Link to='/services' onClick={()=>setIsOpen(false)} className='sm:hover:border-b hover:text-[#643e26]'>Services</Link>
-        <Link to='/aboutus' onClick={()=>setIsOpen(false)} className='sm:hover:border-b hover:text-[#643e26]'>About Us</Link>
         <Link to='/contact' onClick={()=>setIsOpen(false)} className='sm:hover:border-b hover:text-[#643e26]'>Contact Us</Link>
         {/* Icons shown ONLY inside the mobile sidebar when opened */}
                 <div className="flex items-center gap-6 mt-6 lg:hidden">

@@ -1,5 +1,6 @@
 import { WalletCards } from 'lucide-react';
 import React, { useState } from 'react'
+import { motion } from "motion/react"
 
 const Checkout = () => {
     const [paymentMethod, setPaymentMethod] = useState('card');
@@ -23,8 +24,8 @@ const Checkout = () => {
         <>
             <div className='md:p-8 p-4 w-full h-full bg-[#f8f3f2] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
                 <div className='flex flex-col'>
-                    <h1 className='text-[#643e26] fredoka font-extrabold text-3xl md:text-4xl lg:text-4xl'>Payment Method</h1>
-                    <p className='text-[#696462] text-lg tracking-tight mt-2 max-w-md'>Choose how you'd like to pay for your handcrafted treasures.</p>
+                    <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}} className='text-[#643e26] fredoka font-extrabold text-3xl md:text-4xl lg:text-4xl'>Payment Method</motion.h1>
+                    <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-[#696462] text-lg tracking-tight mt-2 max-w-md'>Choose how you'd like to pay for your handcrafted treasures.</motion.p>
                 </div>
                 {/* Main 12-Column Grid Container */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-12">
@@ -34,7 +35,7 @@ const Checkout = () => {
                         <div className="space-y-6">
 
                             {/* Payment Type Selection Cards */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} viewport={{once: true}} transition={{duration:0.8}}  className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                                 {/* Credit Card Option */}
                                 <div
@@ -80,10 +81,10 @@ const Checkout = () => {
                                     </div>
                                 </div>
 
-                            </div>
+                            </motion.div>
 
                             {/* Form Input Fields Box */}
-                            <div className="bg-white p-6 rounded-3xl border border-[#E8D9CD] space-y-4">
+                            <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} viewport={{once: true}} transition={{duration:0.8, delay:0.3}}  className="bg-white p-6 rounded-3xl border border-[#E8D9CD] space-y-4">
                                 {/* CONDITIONAL RENDERING BASED ON PAYMENT METHOD */}
                                 {paymentMethod === 'card' ? (
                                     <>
@@ -184,7 +185,7 @@ const Checkout = () => {
                                     </>
                                 )}
 
-                            </div>
+                            </motion.div>
                         </div>
 
                         {/* Bottom Action Buttons (Inside Left Column) */}
@@ -200,7 +201,7 @@ const Checkout = () => {
                     </div>
 
                     {/* RIGHT COLUMN (5 Cols): Order Summary Block */}
-                    <div className="lg:col-span-5 bg-white p-6 rounded-3xl border border-[#E8D9CD] h-fit">
+                    <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} viewport={{once: true}} transition={{duration:0.8,delay:0.2 }} className="lg:col-span-5 bg-white p-6 rounded-3xl border border-[#E8D9CD] h-fit">
                         <h3 className="font-bold text-sm text-[#3B2219] mb-4">Order Summary</h3>
 
                         {/* Items */}
@@ -237,7 +238,7 @@ const Checkout = () => {
                             <span>Total</span>
                             <span>$86.40</span>
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

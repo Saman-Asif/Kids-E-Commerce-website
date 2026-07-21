@@ -2,10 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import Search from '../components/Search';
 import ProductCard from '../components/ProductCard';
-import Home4 from '../components/Home4';
-import Footer from '../components/Footer';
 import { Link } from "react-router-dom";
-
+import { motion } from "motion/react"
 
 const Shop = () => {
      const [searchQuery, setSearchQuery] = useState('');
@@ -111,11 +109,11 @@ const Shop = () => {
     <>
        <div className='md:p-8 p-4 w-full h-full bg-[#f7f3f2] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
        <div className='flex flex-col items-center justify-center'>
-        <h1 className='text-[#643e26] text-center fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Shop Our Painting Kits</h1>
-        <p className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>Discover the joy of tactile creativity. Our kits are designed to nurture imaginative young minds, blending the calm of a well-designed craft with the vibrant energy of childhood discovery.</p>
+        <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.2}} viewport={{once: true}} className='text-[#643e26] text-center fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Shop Our Painting Kits</motion.h1>
+        <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.3}} viewport={{once: true}}  className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>Discover the joy of tactile creativity. Our kits are designed to nurture imaginative young minds, blending the calm of a well-designed craft with the vibrant energy of childhood discovery.</motion.p>
          <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
         </div>
-        <div className='bg-[#f3eae8] w-full rounded-3xl flex justify-between p-4 items-center mt-16'>
+        <motion.div initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.5}} viewport={{once: true}}  className='bg-[#f3eae8] w-full rounded-3xl flex justify-between p-4 items-center mt-16'>
             <h3 className='text-[#643e26] font-extrabold coiny-regular text-xl hidden lg:block'>Categories</h3>
             <div className='flex flex-wrap justify-between gap-1'>
        {dynamicCategories.map((cat) => {
@@ -135,7 +133,7 @@ const Shop = () => {
             );
           })}
       </div>
-        </div>
+        </motion.div>
          <div className='relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-18'>
              {filteredArticles.length > 0 ? (
     filteredArticles.map((products) => (
@@ -157,13 +155,13 @@ const Shop = () => {
            </div>
         </div>
           <div className=' w-full h-full bg-[#f7f3f2] lg:py-24 lg:px-34 p-4'>
-       <div className='flex flex-col justify-center items-center md:p-8 p-4 py-16 md:py-18 px-6 md:px-16 lg:px-20 rounded-2xl bg-[#e9ddda]'>
-            <h1 className='text-2xl text-[#78311B] md:text-3xl font-semibold text-center'>Share The Creativity</h1>
-            <p className='text-center mt-2 text-[#78311B] max-w-2xl mt-8'>Join our community of little artists! Sign up for tips on fabric care, new stencil releases and 10% Off your first kit.</p>
-             <Link to='/contact'> <button className='bg-[#5A1B08] self-center text-[#f6edde] w-fit rounded-full py-3 text-sm px-12 mt-8'>
+       <motion.div  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}}  className='flex flex-col justify-center items-center md:p-8 p-4 py-16 md:py-18 px-6 md:px-16 lg:px-20 rounded-2xl bg-[#e9ddda]'>
+            <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} className='text-2xl text-[#78311B] md:text-3xl font-semibold text-center'>Share The Creativity</motion.h1>
+            <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-center mt-2 text-[#78311B] max-w-2xl mt-8'>Join our community of little artists! Sign up for tips on fabric care, new stencil releases and 10% Off your first kit.</motion.p>
+             <Link to='/contact'> <motion.button initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.3}}  className='bg-[#5A1B08] self-center text-[#f6edde] w-fit rounded-full py-3 text-sm px-12 mt-8'>
             Join Us
-          </button></Link>
-          </div>
+          </motion.button></Link>
+          </motion.div>
         </div>
         </>
   )

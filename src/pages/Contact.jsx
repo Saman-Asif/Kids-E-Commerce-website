@@ -1,16 +1,15 @@
 import { Mail, MapPin, Phone, Send } from 'lucide-react'
-import React from 'react'
-import Footer from '../components/Footer'
+import { motion } from "motion/react"
 
 const Contact = () => {
     return (
         <>
              <div id='contactus' className='md:p-8 p-4 w-full h-full bg-[#fdf7f6] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
                           <div className='flex flex-col items-center justify-center'>
-                              <h1 className='text-[#643e26] text-center fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Let's Connect</h1>
-                              <p className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>Have a question about a handmade toy or need help with an order? We're here to help nurture your little one's journey.</p>
-                              <div className='flex w-full flex-col lg:flex-row justify-between gap-6 mt-12'>
-                                  <div className='lg:w-1/2 w-full space-y-8'>
+                              <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}}  className='text-[#643e26] text-center fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Let's Connect</motion.h1>
+                              <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}}  className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>Have a question about a handmade toy or need help with an order? We're here to help nurture your little one's journey.</motion.p>
+                              <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} viewport={{once: true}} transition={{duration:0.8}}  className='flex w-full flex-col lg:flex-row justify-between gap-6 mt-12'>
+                                  <motion.div initial={{opacity:0, x: -30}} whileInView={{opacity:1, x:0}} viewport={{once: true}} transition={{duration:0.8, delay: 0.2}}  className='lg:w-1/2 w-full space-y-8'>
                                    <div className='rounded-4xl w-full h-full bg-[#f1e3e0] text-[#f6edde] flex flex-col gap-2 p-4 lg:px-8 lg:py-12 border-white/40 space-y-6 '>
                                   <div className='flex gap-4'>
                                      <div className='text-[#643e26] shrink-0 bg-[#eed6d0] w-12 h-12 rounded-xl flex items-center justify-center'><Mail /></div> 
@@ -34,8 +33,8 @@ const Contact = () => {
                                       </div>
                                       </div>
                                   </div>
-                                  </div>
-                              <div className='w-full lg:w-1/2 h-full'>
+                                  </motion.div>
+                              <motion.div initial={{opacity:0, x: 30}} whileInView={{opacity:1, x:0}} viewport={{once: true}} transition={{duration:0.6, delay: 0.3}} className='w-full lg:w-1/2 h-full'>
                                   <div className='rounded-4xl w-full h-full bg-[#eed6d0] text-[#f6edde] flex flex-col gap-2 p-4 lg:p-8 border-white/40 space-y-6 '>
                                   <div className='flex justify-between items-center'>
                                           <div>
@@ -73,8 +72,8 @@ const Contact = () => {
                                                   Send Message <Send size={18}/>
                                               </button>
                                       </div>
-                                  </div>
-                              </div>
+                                  </motion.div>
+                              </motion.div>
                           </div>
                            </div>
         </>

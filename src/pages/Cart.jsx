@@ -1,17 +1,18 @@
 import { Shield, Trash } from 'lucide-react'
 import QuantitySelector from '../components/QuantitySelector'
 import { Link } from "react-router-dom";
+import { motion } from "motion/react"
 
 const Cart = () => {
     return (
         <>
             <div className='md:p-8 p-4 w-full h-full bg-[#faedea] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
                 <div className='flex flex-col'>
-                    <h1 className='text-[#643e26] fredoka font-extrabold text-3xl md:text-4xl lg:text-4xl'>Your Treasures</h1>
-                    <p className='text-[#696462] text-lg tracking-tight mt-2 max-w-md'>Review your creative collection before we prepare them for your home.</p>
+                    <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}} className='text-[#643e26] fredoka font-extrabold text-3xl md:text-4xl lg:text-4xl'>Your Treasures</motion.h1>
+                    <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-[#696462] text-lg tracking-tight mt-2 max-w-md'>Review your creative collection before we prepare them for your home.</motion.p>
                 </div>
-                <div className='w-full h-full flex flex-col gap-6 mt-12 lg:flex-row'>
-                    <div className='w-full flex flex-col gap-4 lg:w-[70%]'>
+                <motion.div initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} viewport={{once: true}} transition={{duration:0.8}}  className='w-full h-full flex flex-col gap-6 mt-12 lg:flex-row'>
+                    <motion.div initial={{opacity:0, x: -30}} whileInView={{opacity:1, x:0}} viewport={{once: true}} transition={{duration:0.8, delay: 0.2}} className='w-full flex flex-col gap-4 lg:w-[70%]'>
                         <div className='w-full h-auto bg-[#faf9f8] rounded-3xl p-4 md:p-4 border flex flex-col md:flex-row gap-6 border-[#c4c2c0]'>
                             <img className='w-full md:w-[140px] h-[150px] object-cover rounded-2xl flex-shrink-0' src="https://media.istockphoto.com/id/2277074388/photo/group-of-diverse-children-learning-acrylic-pouring-art-in-classroom.jpg?s=612x612&w=0&k=20&c=a45fCV_dROPpHnD766aZ-T-oQsUzZ1buoS4yfY1IfVM=" alt="" />
                             {/* Right Side: Product Details & Controls */}
@@ -46,14 +47,14 @@ const Cart = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='w-full h-auto bg-[#f0dad8] rounded-3xl p-4 md:p-4 flex flex-col md:flex-row lg:py-12 lg:px-6 justify-between border-dashed border-[#c4c2c0] border-2 mt-4'>
+                        <motion.div initial={{opacity:0, x: 30}} whileInView={{opacity:1, x:0}} viewport={{once: true}} transition={{duration:0.6, delay: 0.3}} className='w-full h-auto bg-[#f0dad8] rounded-3xl p-4 md:p-4 flex flex-col md:flex-row lg:py-12 lg:px-6 justify-between border-dashed border-[#c4c2c0] border-2 mt-4'>
                             <div>
                                 <h3 className='text-[#3B2219]'>Complete the Masterpiece?</h3>
                                 <p className='text-[#3B2219]'>Add our "Vibrant Neon Acent Kit" for just $12</p>
                             </div>
                             <button className='bg-[#3B2219] text-white py-1 px-8 rounded-full'>Add to Cart</button>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                     <div className='w-full lg:w-[30%]'>
                         <div className="bg-[#e9ddda] p-6 lg:p-10 rounded-3xl border border-[#EADBCE] shadow-sm flex flex-col justify-between">
                             <div>
@@ -102,7 +103,7 @@ const Cart = () => {
                             <p className='flex justify-center items-center gap-2 text-xs text-[#3B2219]'>Nuturing your creativity with care.</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </>
     )
