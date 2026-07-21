@@ -1,6 +1,9 @@
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
 import Home2 from '../components/Home2'
+import Home3 from '../components/Home3'
+import About from '../components/About'
+import Home4 from '../components/Home4'
 
 const Home = () => {
     return (
@@ -25,6 +28,9 @@ const Home = () => {
                     </div>
                 </div>
                 <Home2/>
+                <Home3/>
+                <About/>
+                <Home4/>
         </>
     )
 }

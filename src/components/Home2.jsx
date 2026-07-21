@@ -1,50 +1,125 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import ProductCard from './ProductCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import { ChevronLeft, ChevronRight, ShoppingBag, User } from 'lucide-react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 const Home2 = () => {
       const products = [
   {
     id: 1,
-    title: "The Allegra",
-    image: "https://www.thesusoutdoors.com/cdn/shop/files/sustainable-walking-boot-white_f9c6786f-4923-42be-a052-e4841603545d.png?v=1686558765&width=823", 
+    title: "Savannah Friends Kit",
+    image: "https://images.unsplash.com/photo-1531796311868-83672cd144f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lkcyUyMGRvaW5nJTIwZmFicmljJTIwcGFpbnRpbmdzJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww", 
     rating: 5,
     reviewCount: 122,
-    price: "Rs.80,800.00 PKR"
+    price: "Rs.60,800.00 PKR"
   },
   {
     id: 2,
-    title: "The Weekend Boot In Black",
-    image: "https://www.thesusoutdoors.com/cdn/shop/files/sustainable-hiking-boot-black.png?v=1686559314&width=493",
-    rating: 5,
+    title: "Botanical Tote Kit",
+    image: "https://media.istockphoto.com/id/2277075343/photo/group-of-diverse-children-learning-acrylic-pouring-art-in-classroom.jpg?s=612x612&w=0&k=20&c=-TeDijdUKdGdFH9SuoiGO-Qs73U0QRi_S2ZFpJTXQU8=",
+    rating: 4,
     reviewCount: 122,
     price: "Rs.80,800.00 PKR"
   },
   {
     id: 3,
-    title: "The Weekend Boot In Sage",
-    image: "https://www.thesusoutdoors.com/cdn/shop/files/sustainable-hiking-boot-green_d9bf3eed-d916-4805-a085-d74bc0ab2e1d.png?v=1686600050&width=493",
+    title: "Denim Dreamer Set",
+    image: "https://media.istockphoto.com/id/1903748694/photo/group-of-diversity-school-children-learning-acrylic-art-together-in-art-class.jpg?s=612x612&w=0&k=20&c=tbj0HUCK6fvSrACw4JAl8S2XTDz75Wv3ltJOmvSizUw=",
     rating: 5,
+    reviewCount: 122,
+    price: "Rs.77,800.00 PKR"
+  },
+  {
+    id: 4,
+    title: "Fabric Painting Kit",
+    image: "https://media.istockphoto.com/id/2277074388/photo/group-of-diverse-children-learning-acrylic-pouring-art-in-classroom.jpg?s=612x612&w=0&k=20&c=a45fCV_dROPpHnD766aZ-T-oQsUzZ1buoS4yfY1IfVM=",
+    rating: 3,
+    reviewCount: 14,
+    price: "Rs.80,800.00 PKR"
+  },
+  {
+    id: 1,
+    title: "Savannah Friends Kit",
+    image: "https://images.unsplash.com/photo-1531796311868-83672cd144f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8a2lkcyUyMGRvaW5nJTIwZmFicmljJTIwcGFpbnRpbmdzJTIwcHJvZmVzc2lvbmFsfGVufDB8fDB8fHww", 
+    rating: 5,
+    reviewCount: 122,
+    price: "Rs.60,800.00 PKR"
+  },
+  {
+    id: 2,
+    title: "Botanical Tote Kit",
+    image: "https://media.istockphoto.com/id/2277075343/photo/group-of-diverse-children-learning-acrylic-pouring-art-in-classroom.jpg?s=612x612&w=0&k=20&c=-TeDijdUKdGdFH9SuoiGO-Qs73U0QRi_S2ZFpJTXQU8=",
+    rating: 4,
     reviewCount: 122,
     price: "Rs.80,800.00 PKR"
   },
   {
-    id: 4,
-    title: "The Weekend Boot Z In Black",
-    image: "https://www.thesusoutdoors.com/cdn/shop/files/winter-boots-city-black.png?v=1686668626&width=493",
+    id: 3,
+    title: "Denim Dreamer Set",
+    image: "https://media.istockphoto.com/id/1903748694/photo/group-of-diversity-school-children-learning-acrylic-art-together-in-art-class.jpg?s=612x612&w=0&k=20&c=tbj0HUCK6fvSrACw4JAl8S2XTDz75Wv3ltJOmvSizUw=",
     rating: 5,
+    reviewCount: 122,
+    price: "Rs.77,800.00 PKR"
+  },
+  {
+    id: 4,
+    title: "Fabric Painting Kit",
+    image: "https://media.istockphoto.com/id/2277074388/photo/group-of-diverse-children-learning-acrylic-pouring-art-in-classroom.jpg?s=612x612&w=0&k=20&c=a45fCV_dROPpHnD766aZ-T-oQsUzZ1buoS4yfY1IfVM=",
+    rating: 3,
     reviewCount: 14,
     price: "Rs.80,800.00 PKR"
   }
 ];
+
+// Refs for custom navigation buttons
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
   return (
     <>
+    {/* Custom Arrow Targets */}
       <div className='md:p-8 p-4 w-full h-full bg-[#e9ddda] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
        <div className='flex flex-col'>
-        <h1 className='text-[#643e26] fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Our Painting Kits</h1>
+        <h1 className='text-[#643e26] fredoka font-extrabold mt-6 text-3xl md:text-4xl lg:text-4xl'>Our Painting Kits</h1>
+        <div className="flex justify-between items-end">
         <p className='text-[#696462] text-lg tracking-tight mt-2 max-w-md'>Professional quality materials for tiny visionaries.</p>
-          <div className="grid grid-cols-1 mt-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-gray-200 gap-4">
-        {products.map((product, index) => (
-          <ProductCard key={index} 
+        <div className="flex space-x-2">
+            <button ref={prevRef} className="custom-prev w-9 h-9 rounded-full border border-[#d6cbbe] flex items-center justify-center hover:bg-[#eae1d3] transition cursor-pointer">
+              <ChevronLeft aria-label="Previous slide" className="w-4 h-4 text-[#5c4a3f]" />
+            </button>
+            <button ref={nextRef} className="custom-next w-9 h-9 rounded-full border border-[#d6cbbe] flex items-center justify-center hover:bg-[#eae1d3] transition cursor-pointer">
+              <ChevronRight aria-label="Next slide" className="w-4 h-4 text-[#5c4a3f]" />
+            </button>
+          </div>
+          </div>
+          <div className=" mt-16 border-gray-200 gap-4">
+          <Swiper
+        modules={[Navigation]}
+        spaceBetween={20}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        navigation={{
+          prevEl: '.custom-prev',
+          nextEl: '.custom-next',
+        }}
+        onInit={(swiper) => {
+          // Assign refs to swiper parameters dynamically on init
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
+        className="pb-4"
+      >
+        {products.map((product) => (
+          <SwiperSlide key={product.id} className='w-60'>
+          <ProductCard 
           title={product.title}
           image={product.image}
           rating={product.rating}
@@ -52,7 +127,9 @@ const Home2 = () => {
           price={product.price}
           >
           </ProductCard>
+          </SwiperSlide>
         ))}
+        </Swiper>
       </div>
        </div>
       </div>

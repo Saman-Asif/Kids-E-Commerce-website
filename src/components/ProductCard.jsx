@@ -12,14 +12,14 @@ const ProductCard = ({image, rating, title, price,reviewCount}) => {
         ))
     }
   return (
-        <div className='flex flex-col bg-white border border-gray-200 group h-full rounded-t-2xl'>
-      <div className='w-full aspect-[4/3] bg-gray-50 overflow-hidden relative rounded-t-2xl'>
+        <div className='flex flex-col bg-white border border-gray-200 group h-full rounded-2xl hover:shadow-2xl hover:scale-102'>
+      <div className='w-full aspect-[16/10] bg-gray-50 overflow-hidden relative rounded-t-2xl'>
      <img src={image} alt={title} className='w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105' />
       </div>
       {/* Product Details */}
       <div className="p-4 flex flex-col flex-grow">
         {/* Title */}
-        <h3 className="text-sm font-medium text-gray-800 mb-1 tracking-tight min-h-[40px]">
+        <h3 className="text-sm font-medium text-gray-800 mb-1 tracking-tight">
           {title}
         </h3>
 
@@ -35,7 +35,7 @@ const ProductCard = ({image, rating, title, price,reviewCount}) => {
         </p>
 
         {/* Action Button */}
-        <button className="mt-auto w-full py-2.5 px-4 text-sm font-medium text- rounded-full bg-[#eed0c7] hover:bg-[#fae5df] transition-colors duration-200">
+        <button className="mt-auto w-full py-2.5 px-4 text-sm font-medium text- rounded-full bg-[#eed0c7] hover:bg-[#f0e2de] transition-colors duration-200">
           Add to Bag
         </button>
       </div>
