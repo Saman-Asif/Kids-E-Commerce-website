@@ -81,13 +81,13 @@ const Home2 = () => {
   const nextRef = useRef(null);
   return (
     <>
-    {/* Custom Arrow Targets */}
-      <div className='md:p-8 p-4 w-full h-full bg-[#e9ddda] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
+      <div className='md:p-8 p-4 w-full h-full bg-white border-b border-gray-100 py-16 md:py-26 px-6 md:px-16 lg:px-20'>
        <div className='flex flex-col'>
         <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}}  className='text-[#643e26] fredoka font-extrabold mt-6 text-3xl md:text-4xl lg:text-4xl'>Our Painting Kits</motion.h1>
         <div className="flex justify-between items-end">
         <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-[#696462] text-lg tracking-tight mt-2 max-w-md'>Professional quality materials for tiny visionaries.</motion.p>
         <motion.div  initial={{opacity:0, scale:0.9}} whileInView={{opacity:1, scale:1}} transition={{duration:0.3, delay:0.3}} viewport={{once: true}}   className="flex space-x-2">
+          {/* Custom Arrow Targets */}
             <button ref={prevRef} className="custom-prev w-9 h-9 rounded-full bg-[#643e26] border border-[#d6cbbe] flex items-center text-[#e9ddda] hover:text-[#643e26] justify-center hover:bg-[#f5efeb] transition cursor-pointer">
               <ChevronLeft aria-label="Previous slide" className="w-4 h-4" />
             </button>

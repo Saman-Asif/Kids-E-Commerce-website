@@ -5,8 +5,6 @@ import Cart from './pages/Cart'
 import Contact from './pages/Contact'
 import { Routes, Route } from "react-router-dom";
 import Shop from './pages/Shop'
-import About from './components/About'
-import About2 from './components/About2'
 import Footer from './components/Footer'
 import ComponentContact from './components/Contact';
 import Checkout from './pages/Checkout'

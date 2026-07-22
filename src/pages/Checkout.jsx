@@ -1,4 +1,4 @@
-import { WalletCards } from 'lucide-react';
+import { PhoneIcon, WalletCards } from 'lucide-react';
 import React, { useState } from 'react'
 import { motion } from "motion/react"
 
@@ -22,7 +22,7 @@ const Checkout = () => {
     };
     return (
         <>
-            <div className='md:p-8 p-4 w-full h-full bg-[#f8f3f2] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
+            <div className='md:p-8 p-4 w-full h-full bg-white py-16 md:py-26 px-6 md:px-16 lg:px-20'>
                 <div className='flex flex-col'>
                     <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}} className='text-[#643e26] fredoka font-extrabold text-3xl md:text-4xl lg:text-4xl'>Payment Method</motion.h1>
                     <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-[#696462] text-lg tracking-tight mt-2 max-w-md'>Choose how you'd like to pay for your handcrafted treasures.</motion.p>
@@ -158,7 +158,7 @@ const Checkout = () => {
                                     <>
                                         {/* JazzCash Info Banner Box */}
                                         <div className="bg-[#FDF2F2] border border-[#F5C6CB] p-4 rounded-2xl flex items-start gap-3">
-                                            <span className="text-lg">📱</span>
+                                            <span className="text-lg"><PhoneIcon size={18}/></span>
                                             <p className="text-xs text-[#721C24] leading-relaxed">
                                                 Please enter the mobile number associated with your JazzCash account. You will receive a secure prompt on your phone to authorize the payment.
                                             </p>

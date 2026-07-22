@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 const Footer = () => {
   return (
     <>
-       <div  className='bg-[#e9ddda] p-4'>
+       <div  className='bg-white p-4 border border-gray-100'>
     <motion.div initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

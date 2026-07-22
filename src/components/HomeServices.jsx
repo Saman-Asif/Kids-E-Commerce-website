@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 const HomeServices = () => {
   return (
     <>
-       <div className='md:p-8 p-4 w-full h-full bg-[#f3eae8] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
+       <div className='md:p-8 p-4 w-full h-full bg-white border border-gray-100 py-16 md:py-26 px-6 md:px-16 lg:px-20'>
                     <div className='flex flex-col lg:flex-row justify-between gap-6 w-full'>
                         <div className='lg:w-1/2 w-full'>
                             <motion.span initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.2}} viewport={{once: true}}  className='bg-[#e9cbc5] p-1 px-4 rounded-full text-[#643e26]'>Our Story</motion.span>

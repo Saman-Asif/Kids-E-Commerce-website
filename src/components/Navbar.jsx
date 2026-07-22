@@ -8,9 +8,9 @@ const Navbar = () => {
 
   return (
     <>
-        <motion.div initial={{opacity:0, y: -50}} animate={{opacity:1, y:0}} transition={{duration:0.6, ease:'easeOut'}} className='py-6 px-4 sm:px-12 lg:px-24 xl:px-20 flex justify-between items-center sticky font-medium top-0 text-[#643e26] z-20 backdrop-blur-sm w-full bg-[#f0e5e2] h-20'>
+        <motion.div initial={{opacity:0, y: -50}} animate={{opacity:1, y:0}} transition={{duration:0.6, ease:'easeOut'}} className='py-6 px-4 sm:px-12 lg:px-24 xl:px-20 flex justify-between items-center sticky shadow-md font-medium top-0 text-[#643e26] z-20 backdrop-blur-sm w-full bg-white h-20'>
           <h1 className='text-3xl coiny-regular'>Kindered Spirits</h1>
-    <ul className={`flex items-center gap-6 text-gray-600 ${!isOpen ? 'max-lg:w-0 overflow-hidden' : 'max-lg:w-70'} max-lg:fixed fredoka top-0 bottom-0 right-0 max-lg:min-h-screen max-lg:h-full text-xl max-lg:flex-col  max-lg:bg-[#f0e5e2] max-lg:text-[#643e26] max-lg:pt-20 lg:items-center transition-all`}>
+    <ul className={`flex items-center gap-6 text-gray-600 ${!isOpen ? 'max-lg:w-0 overflow-hidden' : 'max-lg:w-70'} max-lg:fixed fredoka top-0 bottom-0 right-0 max-lg:min-h-screen max-lg:h-full text-xl max-lg:flex-col  max-lg:bg-white max-lg:text-[#643e26] max-lg:pt-20 lg:items-center transition-all`}>
         <X onClick={()=>setIsOpen(false)} className='w-5 absolute right-4 top-4 lg:hidden text-[#643e26]'/>
         <Link onClick={()=>setIsOpen(false)} to='/' className='sm:hover:border-b hover:text-[#643e26]'>Home</Link>
         <Link onClick={()=>setIsOpen(false)} to='/shop' className='sm:hover:border-b hover:text-[#643e26]'>Shop</Link>

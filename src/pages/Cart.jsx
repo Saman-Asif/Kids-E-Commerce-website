@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 const Cart = () => {
     return (
         <>
-            <div className='md:p-8 p-4 w-full h-full bg-[#faedea] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
+            <div className='md:p-8 p-4 w-full h-full bg-white py-16 md:py-26 px-6 md:px-16 lg:px-20'>
                 <div className='flex flex-col'>
                     <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}} className='text-[#643e26] fredoka font-extrabold text-3xl md:text-4xl lg:text-4xl'>Your Treasures</motion.h1>
                     <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-[#696462] text-lg tracking-tight mt-2 max-w-md'>Review your creative collection before we prepare them for your home.</motion.p>

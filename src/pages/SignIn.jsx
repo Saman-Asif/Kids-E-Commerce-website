@@ -16,7 +16,7 @@ const SignIn = () => {
   };
   return (
     <>
-    <div className='md:p-8 p-4 w-full h-full bg-[#f7f3f2] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
+    <div className='md:p-8 p-4 w-full h-full bg-white py-16 md:py-26 px-6 md:px-16 lg:px-20'>
       {/* Main Container Card */}
       <div className="max-w-4xl w-full mx-auto bg-white rounded-[32px] border border-[#E8D9CD] shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-2">
         

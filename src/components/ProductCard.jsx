@@ -12,7 +12,7 @@ const ProductCard = ({image, rating, title, price,reviewCount}) => {
         ))
     }
   return (
-        <div className='flex flex-col bg-white border border-gray-200 group h-full rounded-2xl hover:shadow-2xl hover:scale-102'>
+        <div className='flex flex-col bg-white border border-gray-300 group h-full rounded-2xl hover:shadow-2xl hover:scale-102'>
       <div className='w-full aspect-[16/10] bg-gray-50 overflow-hidden relative rounded-t-2xl'>
      <img src={image} alt={title} className='w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105' />
       </div>

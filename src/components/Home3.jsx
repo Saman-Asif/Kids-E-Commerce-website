@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 const Home3 = () => {
   return (
     <>
-       <div className='md:p-8 p-4 w-full h-full bg-[#f3eae8] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
+       <div className='md:p-8 p-4 w-full h-full bg-white border-b border-gray-100 py-16 md:py-26 px-6 md:px-16 lg:px-20'>
        <div className='flex flex-col items-center justify-center'>
         <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}}  className='text-[#643e26] text-center fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Our Nurturingly Energetic Craft</motion.h1>
         <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>We bridge the gap between "Playfull mess" and "Professional Art" providing kids with the tools to create something they are truly proud of.</motion.p>

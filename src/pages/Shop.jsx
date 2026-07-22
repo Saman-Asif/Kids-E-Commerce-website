@@ -107,7 +107,7 @@ const Shop = () => {
 
   return (
     <>
-       <div className='md:p-8 p-4 w-full h-full bg-[#f7f3f2] py-16 md:py-26 px-6 md:px-16 lg:px-20'>
+       <div className='md:p-8 p-4 w-full h-full bg-white border border-gray-100 py-16 md:py-26 px-6 md:px-16 lg:px-20'>
        <div className='flex flex-col items-center justify-center'>
         <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.2}} viewport={{once: true}} className='text-[#643e26] text-center fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-4xl'>Shop Our Painting Kits</motion.h1>
         <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.3}} viewport={{once: true}}  className='text-[#696462] text-center text-lg tracking-tight mt-2 max-w-2xl'>Discover the joy of tactile creativity. Our kits are designed to nurture imaginative young minds, blending the calm of a well-designed craft with the vibrant energy of childhood discovery.</motion.p>
@@ -124,7 +124,7 @@ const Shop = () => {
                 onClick={() => setActiveButton(cat)}
                 className={`font-bold text-sm border border-gray-300 rounded-3xl px-4 py-1.5 transition-all duration-500 ease-in-out hover:-translate-y-0.5 hover:scale-104 cursor-pointer
                   ${isActive 
-                    ? 'bg-[#643e26] text-white border-slate-800' 
+                    ? 'bg-[#643e26] text-white' 
                     : 'bg-white text-[#643e26] hover:text-[#D6B26F]'
                   }`}
               >
@@ -154,7 +154,7 @@ const Shop = () => {
           )}
            </div>
         </div>
-          <div className=' w-full h-full bg-[#f7f3f2] lg:py-24 lg:px-34 p-4'>
+          <div className=' w-full h-full bg-white border border-gray-100 lg:py-24 lg:px-34 p-4'>
        <motion.div  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}}  className='flex flex-col justify-center items-center md:p-8 p-4 py-16 md:py-18 px-6 md:px-16 lg:px-20 rounded-2xl bg-[#e9ddda]'>
             <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} className='text-2xl text-[#78311B] md:text-3xl font-semibold text-center'>Share The Creativity</motion.h1>
             <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-center mt-2 text-[#78311B] max-w-2xl mt-8'>Join our community of little artists! Sign up for tips on fabric care, new stencil releases and 10% Off your first kit.</motion.p>
