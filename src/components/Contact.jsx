@@ -26,7 +26,7 @@ const Contact = () => {
                             </div>
                         </motion.div>
                     <motion.div initial={{opacity:0, x: 30}} whileInView={{opacity:1, x:0}} viewport={{once: true}} transition={{duration:0.6, delay: 0.3}} className='w-full lg:w-1/2 h-full'>
-                        <div className='rounded-4xl w-full h-full bg-[#eed6d0] text-[#f6edde] flex flex-col gap-2 p-4 lg:p-8 border-white/40 space-y-6 '>
+                        <div className='rounded-4xl w-full h-full bg-[#eed6d0] text-[#f6edde] flex flex-col gap-2 p-4 lg:p-8 border-white/40 space-y-6 mt-8 lg:mt-0'>
                         <div className='flex justify-between items-center'>
                                 <div>
                                     <label className="block text-sm font-medium text-[#643e26] mt-4 mb-1">Name</label>
