@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ArrowRight, Menu, ShoppingCart, Sun, User, X } from 'lucide-react'
+import { Menu, ShoppingCart, User, X } from 'lucide-react'
 import { Link } from "react-router-dom";
 import { motion } from "motion/react"
 
@@ -28,8 +28,8 @@ const Navbar = () => {
     </ul>
     <ul className='flex items-center gap-6'>
         <Menu onClick={()=>setIsOpen(true)} className='w-4 lg:hidden text-[#643e26]'/>
-       <Link to='/contactus' className=' max-lg:hidden text-[#643e26] cursor-pointer hover:scale-103 transition-all'><button className='flex items-center gap-2 justify-center'><User/></button></Link>
-       <Link to='/cart' className=' max-lg:hidden text-[#643e26] cursor-pointer hover:scale-103 transition-all'><ShoppingCart/></Link>
+       <Link to='/contactus' className=' max-lg:hidden text-[#643e26] cursor-pointer hover:scale-103 transition-all'><button className='flex items-center gap-2 justify-center cursor-pointer'><User/></button></Link>
+       <Link to='/cart' className='max-lg:hidden text-[#643e26] cursor-pointer hover:scale-103 transition-all'><ShoppingCart/></Link>
     </ul>
       </motion.div> 
     </>

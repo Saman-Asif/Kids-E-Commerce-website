@@ -158,7 +158,7 @@ const Shop = () => {
        <motion.div  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} viewport={{once: true}}  className='flex flex-col justify-center items-center md:p-8 p-4 py-16 md:py-18 px-6 md:px-16 lg:px-20 rounded-2xl bg-[#e9ddda]'>
             <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.1}} className='text-2xl text-[#78311B] md:text-3xl font-semibold text-center'>Share The Creativity</motion.h1>
             <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.2}} viewport={{once: true}} className='text-center mt-2 text-[#78311B] max-w-2xl mt-8'>Join our community of little artists! Sign up for tips on fabric care, new stencil releases and 10% Off your first kit.</motion.p>
-             <Link to='/contact'> <motion.button initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.3}}  className='bg-[#5A1B08] self-center text-[#f6edde] w-fit rounded-full py-3 text-sm px-12 mt-8'>
+             <Link to='/contact'> <motion.button initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.3}}  className='bg-[#5A1B08] self-center text-[#f6edde] w-fit rounded-full py-3 text-sm px-12 mt-8 cursor-pointer'>
             Join Us
           </motion.button></Link>
           </motion.div>

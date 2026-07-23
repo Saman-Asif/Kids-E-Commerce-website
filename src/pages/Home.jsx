@@ -16,7 +16,7 @@ const Home = () => {
                             <motion.span initial={{opacity:0, y:50}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.2}} viewport={{once: true}} className='bg-[#e9cbc5] p-1 px-4 rounded-full text-[#643e26]'>Ocean Wonders Kit</motion.span>
                             <motion.h1  initial={{opacity:0, y:40}} whileInView={{opacity:1, y:0}} transition={{duration:0.6, delay:0.3}} viewport={{once: true}} className='text-[#643e26] fredoka font-extrabold mt-6 text-4xl md:text-4xl lg:text-5xl'>Artistic Magic at Their <span className='italic text-[#5C1C0A]'>Fingertips</span></motion.h1>
                             <motion.p  initial={{opacity:0, y:30}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.4}} viewport={{once: true}}  className='text-[#696462] text-xl tracking-tight mt-6 max-w-md'>Nuturing Professional creativity through playful fabric painting. Transfrom everday moments into wearable, washable masterpieces.</motion.p>
-                          <Link to='/shop'><motion.button initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.5}} viewport={{once: true}} className='bg-[#d2775c] mt-6 rounded-full text-white flex gap-2 items-center justify-center py-3 px-10'>
+                          <Link to='/shop'><motion.button initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} transition={{duration:0.5, delay:0.5}} viewport={{once: true}} className='bg-[#d2775c] mt-6 rounded-full text-white flex gap-2 items-center justify-center py-3 px-10 cursor-pointer'>
                                 Shop New Arrivals<ArrowRight size={20} />
                             </motion.button></Link>  
                         </div>

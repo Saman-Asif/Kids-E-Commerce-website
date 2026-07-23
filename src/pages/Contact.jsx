@@ -43,7 +43,7 @@ const Contact = () => {
                                                   type="name"
                                                   name="name"
                                                   required
-                                                  className="w-full px-4 py-3 text-sm border text-[#27201e] border-[#ccc9c8] rounded-2xl bg-[#fdf7f6] focus:border-[#e6c7bf] focus:border-4 outline-none transition-all"
+                                                  className="w-full px-4 py-3 text-sm border text-[#27201e] border-[#ccc9c8] rounded-2xl bg-[#fdf7f6] focus:border-transparent focus:ring-4 focus:ring-[#e6c7bf] outline-none"
                                                   placeholder="Your Name..."
                                               />
                                           </div>
@@ -53,7 +53,7 @@ const Contact = () => {
                                                   type="email"
                                                   name="email"
                                                   required
-                                                  className="w-full px-4 py-3 text-sm border text-[#27201e] border-[#ccc9c8] rounded-2xl bg-[#fdf7f6] focus:border-[#e6c7bf] focus:border-4 outline-none transition-all"
+                                                  className="w-full px-4 py-3 text-sm border text-[#27201e] border-[#ccc9c8] rounded-2xl focus:border-transparent bg-[#fdf7f6] focus:ring-4 focus:ring-[#e6c7bf] outline-none"
                                                   placeholder="Your Email..."
                                               />
                                           </div>
@@ -64,11 +64,11 @@ const Contact = () => {
                                                   name="message"
                                                   required
                                                   rows="5"
-                                                  className="w-full text-sm px-4 py-3 text-[#27201e] border-[#ccc9c8] rounded-2xl focus:border-[#e6c7bf] focus:border-4  outline-none transition-all bg-[#fdf7f6] resize-none border"
+                                                  className="w-full text-sm px-4 py-3 text-[#27201e] border-[#ccc9c8] rounded-2xl outline-none focus:border-transparent bg-[#fdf7f6] focus:ring-4 focus:ring-[#e6c7bf] resize-none border hover:shadow-md"
                                                   placeholder="How can we Help?"
                                               ></textarea>
                                           </div>
-                                              <button className='text-white text-md bg-[#5A1B08] gap-4 w-full flex items-center justify-center py-3 rounded-full'>
+                                              <button className='text-white text-md bg-[#5A1B08] gap-4 w-full flex items-center cursor-pointer justify-center py-3 rounded-full'>
                                                   Send Message <Send size={18}/>
                                               </button>
                                       </div>

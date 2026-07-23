@@ -20,7 +20,7 @@ const Cart = () => {
                                 <div>
                                     <div className='flex items-center justify-between mt-4'>
                                         <h3 className='text-lg font-bold text-[#3B2219]'>Animal Safari Fabric Paint Kit</h3>
-                                        <Trash />
+                                        <Trash className='cursor-pointer' />
                                     </div>
                                     <p className='text-sm text-gray-600 mt-1'>Includes 6 wash-safe colors, stencils, and brushes.</p>
                                 </div>
@@ -37,7 +37,7 @@ const Cart = () => {
                                 <div>
                                     <div className='flex items-center justify-between mt-4'>
                                         <h3 className='text-lg font-bold text-[#3B2219]'>Custom Canvas Tote Set</h3>
-                                        <Trash />
+                                        <Trash className='cursor-pointer' />
                                     </div>
                                     <p className='text-sm text-gray-600 mt-1'>Two 100% organic cotton totes ready for your art.</p>
                                 </div>
@@ -52,7 +52,7 @@ const Cart = () => {
                                 <h3 className='text-[#3B2219]'>Complete the Masterpiece?</h3>
                                 <p className='text-[#3B2219]'>Add our "Vibrant Neon Acent Kit" for just $12</p>
                             </div>
-                            <button className='bg-[#3B2219] text-white py-1 px-8 rounded-full'>Add to Cart</button>
+                            <button className='bg-[#3B2219] text-white cursor-pointer py-1 px-8 rounded-full'>Add to Cart</button>
                         </motion.div>
                     </motion.div>
                     <div className='w-full lg:w-[30%]'>

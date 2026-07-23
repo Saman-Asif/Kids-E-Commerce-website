@@ -35,7 +35,7 @@ const ProductCard = ({image, rating, title, price,reviewCount}) => {
         </p>
 
         {/* Action Button */}
-        <button className="mt-auto w-full py-2.5 px-4 text-sm font-medium text- rounded-full bg-[#eed0c7] hover:bg-[#f0e2de] transition-colors duration-200">
+        <button className="mt-auto w-full py-2.5 px-4 text-sm font-medium text- rounded-full bg-[#eed0c7] hover:bg-[#f0e2de] transition-colors duration-200 cursor-pointer">
           Add to Bag
         </button>
       </div>

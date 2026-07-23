@@ -16,7 +16,7 @@ const Home4 = () => {
                 className="w-full bg-white px-6 py-3 text-sm border text-[#292421] rounded-full focus:border-[#C16C53] focus:border-2 outline-none transition-all"
                 placeholder="Your Email Address..."
               />
-              <button className='bg-[#5A1B08] self-center text-[#f6edde] w-fit rounded-full py-4 text-sm px-8 lg:mt-0'>
+              <button className='bg-[#5A1B08] cursor-pointer self-center text-[#f6edde] w-fit rounded-full py-4 text-sm px-8 lg:mt-0'>
             Subscribe
           </button>
           </motion.div>

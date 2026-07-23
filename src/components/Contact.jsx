@@ -34,7 +34,7 @@ const Contact = () => {
                                         type="name"
                                         name="name"
                                         required
-                                        className="w-full px-4 py-3 text-sm border text-[#27201e] border-[#ccc9c8] rounded-2xl bg-[#fdf7f6] focus:border-[#e6c7bf] focus:border-4 outline-none transition-all"
+                                        className="w-full px-4 py-3 text-sm border text-[#27201e] border-[#ccc9c8] rounded-2xl bg-[#fdf7f6] focus:border-transparent focus:ring-4 focus:ring-[#e6c7bf] outline-none transition-all"
                                         placeholder="Your Name..."
                                     />
                                 </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                                         type="email"
                                         name="email"
                                         required
-                                        className="w-full px-4 py-3 text-sm border text-[#27201e] border-[#ccc9c8] rounded-2xl bg-[#fdf7f6] focus:border-[#e6c7bf] focus:border-4 outline-none transition-all"
+                                        className="w-full px-4 py-3 text-sm border text-[#27201e] border-[#ccc9c8] rounded-2xl bg-[#fdf7f6] focus:border-transparent focus:ring-4 focus:ring-[#e6c7bf] outline-none transition-all"
                                         placeholder="Your Email..."
                                     />
                                 </div>
@@ -55,11 +55,11 @@ const Contact = () => {
                                         name="message"
                                         required
                                         rows="5"
-                                        className="w-full text-sm px-4 py-3 text-[#27201e] border-[#ccc9c8] rounded-2xl focus:border-[#e6c7bf] focus:border-4  outline-none transition-all bg-[#fdf7f6] resize-none border"
+                                        className="w-full text-sm px-4 py-3 text-[#27201e] border-[#ccc9c8] rounded-2xl focus:border-transparent focus:ring-4 focus:ring-[#e6c7bf] outline-none transition-all bg-[#fdf7f6] resize-none border"
                                         placeholder="How can we Help?"
                                     ></textarea>
                                 </div>
-                                    <button className='text-white text-md bg-[#5A1B08] gap-2 w-full flex items-center justify-center py-3 rounded-full'>
+                                    <button className='text-white text-md bg-[#5A1B08] gap-2 w-full flex items-center justify-center py-3 rounded-full cursor-pointer'>
                                         Submit
                                     </button>
                             </div>
